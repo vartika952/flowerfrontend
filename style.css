@@ -118,9 +118,9 @@ header .icons #menu{
   }
   @keyframes back
   {
-      0%{background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)),url(../images/3.jpg);}
-      50%{background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)),url(../images/1.jpg);}
-      100%{background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)),url(../images/2.jpg);}
+      0%{background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)),url(images/3.jpg);}
+      50%{background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)),url(images/1.jpg);}
+      100%{background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)),url(images/2.jpg);}
   
   }
   
@@ -503,19 +503,19 @@ span{
 }
 .cards:nth-child(1) .card-img
 {
-    background-image: url(../images/vartika.jpeg);
+    background-image: url(images/vartika.jpeg);
 }
 .cards:nth-child(2) .card-img
 {
-    background-image: url(../images/varun.jpg);
+    background-image: url(images/varun.jpg);
 }
 .cards:nth-child(3) .card-img
 {
-    background-image: url(../images/vedant.jpeg);
+    background-image: url(images/vedant.jpeg);
 }
 .cards:nth-child(4) .card-img
 {
-    background-image: url(../images/vedesh.jpeg);
+    background-image: url(images/vedesh.jpeg);
 }
 
 
