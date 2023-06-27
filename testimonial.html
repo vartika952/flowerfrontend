@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Testimonials</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom, #f06292, #ffb74d);
+        padding: 20px;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .testimonial-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .testimonial {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 300px;
+      }
+
+      .testimonial:nth-child(even) {
+        background-color: #f7f7f7;
+      }
+
+      .testimonial h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #f06292;
+      }
+
+      .testimonial p {
+        margin-bottom: 5px;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Testimonials</h2>
+
+    <div class="testimonial-container" id="testimonialContainer"></div>
+
+    <script>
+      const testimonialContainer = document.getElementById(
+        "testimonialContainer"
+      );
+
+      let testimonials = localStorage.getItem("testimonials");
+      testimonials = testimonials ? JSON.parse(testimonials) : [];
+
+      testimonials.forEach(function (testimonial) {
+        const testimonialElement = document.createElement("div");
+        testimonialElement.className = "testimonial";
+        testimonialElement.innerHTML = `
+          <h3>${testimonial.name}</h3>
+          <p>Rating: ${testimonial.rating}</p>
+          <p>${testimonial.review}</p>
+        `;
+
+        testimonialContainer.appendChild(testimonialElement);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,643 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Raleway:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,500&family=Instrument+Serif:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,500&family=Instrument+Serif:ital@1&family=Russo+One&display=swap');
+html {
+    font-size: 62.5%;
+}
+body{
+    overflow-x: hidden;
+    margin: 0;padding: 0;
+
+}
+
+/* section{
+    margin: 5rem;
+} */
+
+.btn{
+    font-size: 1.5rem;
+    color: #fff;
+    padding: .5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    line-height: 2;
+    border-radius: 2rem;
+    background: rgb(46, 44, 44);
+    text-transform: capitalize;
+    margin-top: .5rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    font-weight: bold;
+    color: black;
+    background: palevioletred;
+}
+
+section{
+    margin-bottom: 2rem;
+}
+
+/* header section */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    display: flex;
+    padding-right: 25px;
+    align-items: center;
+    justify-content:space-between;
+    z-index:1000;
+    box-shadow: var(--box-shadow);}
+.logo{
+    font-size: 50px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-family: 'Great Vibes',cursive;
+    color: #fff;
+    cursor: pointer;
+}
+.logo span{
+    font-size: 45px;
+    color: #9a533d;
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+header .navbar a.active, header .navbar a:hover{
+    background: #94c2dc;
+}
+
+header .icons i, header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;color:var(--black);
+    border-radius: 50%;
+    background: #eee;
+}
+
+header .icons i:hover, header .icons a:hover{
+    color: black;
+    background: #94c2dc;
+    transform: rotate(360deg);
+}
+
+header .icons #menu{
+    display: none;
+}
+
+/*home section*/
+#home{
+    padding-top: 100px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .content1{
+    background-color: lightpink;
+  }
+  .content2{
+    background-color: lightpink;
+    background-position: center;
+    background-size: 100% 100%;
+    animation: back 10s infinite linear;
+  }
+  @keyframes back
+  {
+      0%{background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)),url(../images/3.jpg);}
+      50%{background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)),url(../images/1.jpg);}
+      100%{background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)),url(../images/2.jpg);}
+  
+  }
+  
+  .content1 .content{
+    color: #000;
+    padding: 20px;
+    background-color: lightpink;
+    position: absolute;
+    left: 130px;
+    top: 300px;
+    text-align: left;
+    width: 500px;
+    height: 317px;
+  }
+  .content p{
+    padding-top: 75px;
+    font-size: 19px;
+    line-height: 25px;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+    font-family: 'Raleway',sans-serif;
+  }
+  .content2 h1{
+    position: absolute;
+    left: 200px;
+    top: 150px;
+    font-size: 90px;
+    font-family: 'Instrument Serif', serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 450;
+    color: #000;
+    letter-spacing: 8px;
+  }
+  .content2 h1 span{
+    color: #fff;
+  }
+
+  /*about section*/
+  .about{
+    width: 100%;
+    padding: 65px 0px;
+    background-color: #000;
+}
+.about img{
+    height: auto;
+    width: 450px;
+    animation: photo 5s infinite linear;
+    border: 1px solid palevioletred;
+}
+@keyframes photo{
+    0%{ transform: scale(1);}
+    50%{ transform: scale(1.20);}
+    100%{ transform: scale(1);}
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1200px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h1{
+    color: white;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-family: 'Bitter', serif;
+    font-family: 'Instrument Serif', serif;
+    letter-spacing: 2px;
+}
+.about-text h5{
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+span{
+    color: rgb(245, 139, 156);
+}
+.about-text p{
+    color: #fcfcfc;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/*review section*/
+.review{
+    height: 400px;
+    display: block;
+    width: 90%;
+    text-align: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-top: 90px ;
+    
+}
+.review .heading h2{
+    font-family: 'Bitter', serif;
+    font-family: 'Instrument Serif', serif;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    font-size: 35px;
+    word-spacing: 3px;
+}
+.item
+{
+    margin-right: 0;
+}
+.review-col
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.review-col li
+{
+    margin: 20px;
+}
+.review-list-landing{
+    background: #fff;
+    border: 1.5px solid hsla(0, 65%, 68%, 5);
+    border-radius: 20px;
+    box-shadow: none;
+    width: auto;
+    padding: 30px;
+}
+.review-list-landing:hover
+{
+    box-shadow: 3.9px 7.8px hsl(0deg 0% 0% / 0.38)
+}
+.rating-desc {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1c2120;
+    opacity: .75;
+}
+.review-date
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+.customer-image-rating
+{
+    display: flex;
+    align-items: center;
+}
+.customer_name
+{
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+    margin-right: 12px;
+}
+.starImgNum{
+    background: rgba(0,161,68,.9);
+    border-radius: 5px;
+    padding: 3px 8px;
+    height: 20px;
+}
+.starImage{
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+    margin-right: 2px;
+}
+.starNum{
+    font-family: Lato,sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+}
+.customedate span.customePost {
+    font-weight: 400;
+    margin-right: 2px;
+}
+.customedate span
+{
+    font-weight: 700;
+    font-size: 12px;
+    color: #888;
+}
+.btn1{
+    font-size: 1.5rem;
+    color: green;
+    padding: .5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    line-height: 2;
+    border-color: green;
+    border-radius: 2rem;
+    background: whitesmoke;
+    text-transform: capitalize;
+    margin-top: .5rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.btn1:hover{
+    font-weight: bold;
+    color: whitesmoke;
+    background: green;
+}
+
+
+/*product section*/
+.productc{
+    height: 75vh;
+}
+.productmain{
+    padding: 0;
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+.productc{
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.productc .heading{
+    font-size: 45px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 14px;
+    font-family: 'Bitter', serif;
+    font-family: 'Instrument Serif', serif;
+}
+.productc .sub-heading
+{
+    font-family: Lato,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+    text-align: center;
+    color: #1c2120;
+    opacity: .75;
+    margin-top: -.5px;
+    margin-bottom: 5px;
+}
+.pcontent{
+    display: flex;
+    justify-content: space-around;
+}
+.content-slider{
+    margin-top: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    will-change: contents;
+}
+.content-slider li{
+    min-height: 345px;
+    margin: 30px;
+}
+.content-slider li a{
+    border: 1px solid hsla(0,0%,52.5%,.5);
+    border-radius: 200px 200px 20px 20px;
+}
+.content-slider li a span{
+    overflow: hidden;
+    border-radius: 1000px 1000px 1000px 0;
+    border: 2px solid;
+    display: grid;
+}
+.content-slider li a img{
+    background: linear-gradient(180deg,transparent 42.71%,rgba(0,0,0,.1));
+    border-radius: 1000px 1000px 0 0;
+    transition: all .7s ease;
+}
+.content-slider li a img:hover
+{
+    transform:  scale(1.2);
+}
+.giftname
+{
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: rgba(0,0,0,.7);
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: Lato;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cards
+{
+    width: 300px;
+    margin: 15px;
+    transition: 0.2s;
+    border-radius: 15px;
+    
+}
+.card-img
+{
+
+    width: 150px;
+    height: 150px;
+    border: 5px double black;
+    border-radius: 50%;
+    justify-content: center;
+    background-position: center ;
+    background-size: cover;
+}
+.card-body
+{
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.card-footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-footer button
+{
+    width: 150px;
+    background: black;
+    color: white;
+    border-radius: 15px;
+    border: 2px solid black;
+    padding: 6px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: 0.2s;
+}
+.card-footer button:hover
+{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+.cards:hover
+{
+    box-shadow: 3.9px 7.8px hsl(0deg 0% 0% / 0.38)
+}
+.creators
+{
+  margin-bottom: 15px;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 500;
+  font-family: 'Raleway',sans-serif;
+  color: #ad967c;
+  cursor: pointer;
+}
+.cards:nth-child(1) .card-img
+{
+    background-image: url(../images/vartika.jpeg);
+}
+.cards:nth-child(2) .card-img
+{
+    background-image: url(../images/varun.jpg);
+}
+.cards:nth-child(3) .card-img
+{
+    background-image: url(../images/vedant.jpeg);
+}
+.cards:nth-child(4) .card-img
+{
+    background-image: url(../images/vedesh.jpeg);
+}
+
+
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to left, black, palevioletred);
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1rem;
+}
+.footer-content p{
+    margin-top: -5px;
+    line-height: 28px;
+    font-size: 15px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.7rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: palevioletred;
+}
+
+.footer-bottom{
+    background: linear-gradient(to left, black, palevioletred);
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    color: palevioletred;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  #rateUsButton {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+
+  #rateUsButton:hover {
+    background-color: #45a049;
+  }
+
+  #reviewDialog {
+    background-color: white;
+    padding: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    resize: vertical;
+  }
+
+  button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rate Our Website</title>
+    <script>
+      // Add event listener to the window's beforeunload event
+      window.addEventListener("beforeunload", function (event) {
+        // Display a confirmation dialog
+        var confirmationMessage =
+          "Are you sure you want to leave? Please rate our website before you go.";
+        event.returnValue = confirmationMessage;
+        if (typeof event.preventDefault === "function") {
+          event.preventDefault();
+        }
+        return confirmationMessage;
+      });
+
+      function submitRating() {
+        var rating = document.querySelector('input[name="rating"]:checked');
+        if (rating) {
+          var selectedRating = rating.value;
+          // Perform actions with the selected rating
+          alert(
+            "Thank you for rating our website with " +
+              selectedRating +
+              " stars!"
+          );
+        } else {
+          alert("Please select a rating before submitting.");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Rate Our Website</h1>
+
+    <div>
+      <label> <input type="radio" name="rating" value="1" /> 1 star </label>
+      <label> <input type="radio" name="rating" value="2" /> 2 stars </label>
+      <label> <input type="radio" name="rating" value="3" /> 3 stars </label>
+      <label> <input type="radio" name="rating" value="4" /> 4 stars </label>
+      <label> <input type="radio" name="rating" value="5" /> 5 stars </label>
+    </div>
+
+    <button onclick="submitRating()">Submit</button>
+  </body>
+</html>

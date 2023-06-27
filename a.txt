@@ -1,0 +1,6 @@
+ function clearAllData() {
+      localStorage.clear();
+    }
+
+    // Call the function
+    clearAllData();

@@ -1,0 +1,115 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Raleway:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,500&family=Instrument+Serif:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,500&family=Instrument+Serif:ital@1&family=Russo+One&display=swap');
+
+a{text-decoration: none;}
+html {
+    background-color: black;
+    font-size: 62.5%;
+}
+body{
+    overflow-x: hidden;
+    margin: 0;padding: 0;
+}
+.btn{
+    font-size: 1.5rem;
+    color: #fff;
+    padding: .5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    line-height: 2;
+    border-radius: 2rem;
+    background: rgb(46, 44, 44);
+    text-transform: capitalize;
+    margin-top: .5rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    font-weight: bold;
+    color: black;
+    background: palevioletred;
+}
+header{
+    top: 15;
+    left: 0;
+    right: 0;
+    background:black;
+    display: flex;
+    padding-right: 25px;
+    align-items: center;
+    justify-content:space-between;
+    z-index:1000;
+    box-shadow: var(--box-shadow);}
+.logo{
+    font-size: 50px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-family: 'Great Vibes',cursive;
+    color: #fff;
+    cursor: pointer;
+}
+.logo span{
+    font-size: 45px;
+    color: #9a533d;
+}
+.about h1{
+    color: white;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    padding-right: 75px;
+    font-family: 'Bitter', serif;
+    font-family: 'Instrument Serif', serif;
+    letter-spacing: 2px;
+    text-align: right;
+}
+.about{
+    width: 100%;
+    padding: 0px 0px;
+    background-color: #000;
+}
+.about img{
+    height: auto;
+    width: 400px;
+    animation: photo 5s infinite linear;
+    border: 1px solid palevioletred;
+}
+@keyframes photo{
+    0%{ transform: scale(1);}
+    50%{ transform: scale(1.20);}
+    100%{ transform: scale(1);}
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1200px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h1{
+    color: white;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 10pcpx;
+    font-family: 'Bitter', serif;
+    font-family: 'Instrument Serif', serif;
+    letter-spacing: 2px;
+}
+span{
+    color: rgb(245, 139, 156);
+}
+.about-text p{
+    color: #fcfcfc;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
